@@ -7,7 +7,7 @@ import org.openqa.selenium.safari.SafariDriver;
 import org.testng.annotations.Test;
 
 public class SimpleTest {
-    @Test
+    @Test(groups = "chrome")
     public void test1() {
         WebDriverManager.chromedriver().setup();
         WebDriver driver = new ChromeDriver();
