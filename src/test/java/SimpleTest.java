@@ -13,7 +13,7 @@ public class SimpleTest {
         WebDriver driver = new ChromeDriver();
     }
 
-    @Test
+    @Test(groups = "firefox")
     public void firefox() {
         WebDriverManager.firefoxdriver().setup();
         WebDriver driver = new FirefoxDriver();
